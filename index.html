@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -31,63 +31,137 @@
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#products">Products</a>
         <a href="#partners">Partners</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="portfolio.html">Case Studies</a>
         <a class="cta-link" href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
+      <!-- Hero Section with Professional Image Slider -->
       <section class="hero" id="top">
-        <div class="hero__text">
-          <div class="hero-pills">
-            <span class="pill">Security</span>
-            <span class="pill">Power</span>
-            <span class="pill">Smart Home</span>
+        <div class="hero-slider-wrapper">
+          <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1504280390369-361c6d9f38f4?auto=format&fit=crop&w=1600&q=80');">
+              <div class="slide-overlay"></div>
+              <div class="slide-content">
+                <div class="hero-pills">
+                  <span class="pill">Security</span>
+                  <span class="pill">Power</span>
+                  <span class="pill">Smart Home</span>
+                </div>
+                <h1>Secure every entry. Power every moment.</h1>
+                <p class="lede">
+                  ARTSCI delivers CCTV, access control, electric fencing, and solar backup in one engineered stack—trusted by banks, estates, schools, oil servicing firms, and government sites since 2015.
+                </p>
+                <div class="hero__actions">
+                  <a class="btn primary" href="#contact">Book a site audit</a>
+                  <a class="btn ghost" href="#services">Explore solutions</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');">
+              <div class="slide-overlay"></div>
+              <div class="slide-content">
+                <div class="hero-pills">
+                  <span class="pill">Access Control</span>
+                  <span class="pill">Smart Lock</span>
+                </div>
+                <h1>Smart Access Control Systems</h1>
+                <p class="lede">
+                  Automatic gates and intelligent door locks for seamless, secure entry management across your premises.
+                </p>
+                <div class="hero__actions">
+                  <a class="btn primary" href="#contact">Learn more</a>
+                  <a class="btn ghost" href="#services">View features</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=80');">
+              <div class="slide-overlay"></div>
+              <div class="slide-content">
+                <div class="hero-pills">
+                  <span class="pill">Solar Power</span>
+                  <span class="pill">Renewable Energy</span>
+                </div>
+                <h1>Solar & Inverter Solutions</h1>
+                <p class="lede">
+                  Hybrid inverter systems with lithium batteries and solar panels sized perfectly for your energy needs.
+                </p>
+                <div class="hero__actions">
+                  <a class="btn primary" href="#contact">Get a quote</a>
+                  <a class="btn ghost" href="#services">View solutions</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80');">
+              <div class="slide-overlay"></div>
+              <div class="slide-content">
+                <div class="hero-pills">
+                  <span class="pill">Electric Fence</span>
+                  <span class="pill">Perimeter Security</span>
+                </div>
+                <h1>Professional Perimeter Security</h1>
+                <p class="lede">
+                  High-voltage electric fencing with integrated CCTV and alarm systems for complete peace of mind.
+                </p>
+                <div class="hero__actions">
+                  <a class="btn primary" href="#contact">Schedule audit</a>
+                  <a class="btn ghost" href="#services">Explore options</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <h1>Secure every entry. Power every moment.</h1>
-          <p class="lede">
-            ARTSCI delivers CCTV, access control, electric fencing, and solar backup in one engineered stack—trusted by banks, estates, schools, oil servicing firms, and government sites since 2015.
-          </p>
-          <div class="hero__actions">
-            <a class="btn primary" href="#contact">Book a site audit</a>
-            <a class="btn ghost" href="#services">Explore solutions</a>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-btn prev" aria-label="Previous slide">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+            <button class="slider-btn next" aria-label="Next slide">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
           </div>
-          <div class="hero__stats">
-            <div>
-              <span class="stat">500+</span>
-              <span class="meta">Projects delivered</span>
-            </div>
-            <div>
-              <span class="stat">24/7</span>
-              <span class="meta">Remote monitoring</span>
-            </div>
-            <div>
-              <span class="stat">2015</span>
-              <span class="meta">Built on experience</span>
-            </div>
+
+          <!-- Slider Indicators -->
+          <div class="slider-indicators">
+            <button class="indicator active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="indicator" data-slide="1" aria-label="Slide 2"></button>
+            <button class="indicator" data-slide="2" aria-label="Slide 3"></button>
+            <button class="indicator" data-slide="3" aria-label="Slide 4"></button>
           </div>
         </div>
-        <div class="hero__visual" aria-hidden="true">
-          <div class="image-frame" style="background-image:url('https://images.unsplash.com/photo-1504280390369-361c6d9f38f4?auto=format&fit=crop&w=1200&q=80');">
-            <div class="image-overlay-card">
-              <div>
-                <span class="meta">Live monitoring</span>
-                <strong>Command view</strong>
-              </div>
-              <div class="overlay-stats">
-                <span><strong>99.8%</strong> uptime</span>
-                <span><strong>120</strong> sites managed</span>
-              </div>
-            </div>
+
+        <!-- Stats Bar -->
+        <div class="hero__stats">
+          <div>
+            <span class="stat">500+</span>
+            <span class="meta">Projects delivered</span>
           </div>
-          <div class="image-stack">
-            <div class="thumb" style="background-image:url('cctv.avif');"></div>
-            <div class="thumb" style="background-image:url('live.jpg');"></div>
+          <div>
+            <span class="stat">24/7</span>
+            <span class="meta">Remote monitoring</span>
+          </div>
+          <div>
+            <span class="stat">2015</span>
+            <span class="meta">Built on experience</span>
+          </div>
+          <div>
+            <span class="stat">99.8%</span>
+            <span class="meta">Uptime guarantee</span>
           </div>
         </div>
       </section>
 
+      <!-- Trust Bar Section -->
       <section class="trustbar">
         <div class="trust-pill">Security & Power Company</div>
         <div class="trust-item">Banks</div>
@@ -97,93 +171,300 @@
         <div class="trust-item">Homes</div>
       </section>
 
+      <!-- Services Section -->
       <section class="section services" id="services">
         <div class="section__header">
           <p class="eyebrow">What we deliver</p>
-          <h2>Complete security and power stacks—engineered, installed, maintained.</h2>
-          <p class="lede">Pick the capability you need or let us bundle CCTV, access, fencing, and solar for one managed outcome.</p>
+          <h2>Security, power, and access—engineered and supported end-to-end.</h2>
+          <p class="lede">Site assessment, system design, installation, documentation, and preventive maintenance. One team accountable for uptime.</p>
         </div>
-        <div class="grid three service-grid">
-          <div class="card service-card">
+        <div class="service-showcase">
+          <article class="service-panel" style="--panel-bg: url('cctv.avif');">
             <div class="pill">CCTV</div>
-            <h3>Surveillance</h3>
-            <p>HD/IP CCTV with remote viewing, AI detection, alarms, and clean storage setup.</p>
-            <ul>
-              
-              <li>Monitoring ready</li>
-              <li>Annual maintenance</li>
-            </ul>
-          </div>
-          <div class="card service-card">
-            <div class="pill">Inverter</div>
-            <h3>Solar & Power</h3>
-            <p>Hybrid inverter systems, lithium batteries, and solar panels sized to your load.</p>
-            <ul>
-              
-              <li>Load analysis + design</li>
-              <li>Battery health monitoring</li>
-            </ul>
-          </div>
-          <div class="card service-card">
-            <div class="pill">Smart</div>
-            <h3>Smart Home</h3>
-            <p>Smart locks, gate automation, lighting, and energy dashboards that sync with solar.</p>
-            <ul>
-              <li>Keyless entry & intercom</li>
-              <li>Mobile + on-site control</li>
-              <li>Integrates with CCTV</li>
-            </ul>
-          </div>
-          <div class="card service-card">
-            <div class="pill">Fence</div>
-            <h3>Electric Fencing</h3>
-            <p>High-voltage perimeter with zoning, alarms, signage, and 24-hour battery backup.</p>
-            <ul>
-              <li>Gate + CCTV tie-in</li>
-              <li>Routine safety checks</li>
-              <li>Compliance ready</li>
-            </ul>
-          </div>
-          <div class="card service-card">
+            <h3>Surveillance Systems</h3>
+            <p>IP CCTV with AI analytics, remote viewing, clean cabling, and secure storage sized to your retention policy.</p>
+            <div class="service-meta">
+              <span>HD/4K cameras</span>
+              <span>AI analytics</span>
+              <span>Command room ready</span>
+            </div>
+          </article>
+
+          <article class="service-panel" style="--panel-bg: url('solar.webp');">
+            <div class="pill">Power</div>
+            <h3>Solar & Backup Power</h3>
+            <p>Hybrid inverters, lithium batteries, and rooftop solar designed from a load audit—clean changeover and longevity built in.</p>
+            <div class="service-meta">
+              <span>Load audit & sizing</span>
+              <span>Lithium + MPPT</span>
+              <span>Surge & earthing</span>
+            </div>
+          </article>
+
+          <article class="service-panel" style="--panel-bg: url('live.jpg');">
             <div class="pill">Access</div>
             <h3>Access Control</h3>
-            <p>Smart door locks, RFID, biometrics, and visitor management with audit trails.</p>
-            <ul>
-              <li>Role-based access</li>
-              <li>Remote unlock</li>
-              <li>Alerts & reports</li>
-            </ul>
+            <p>Biometric/RFID control, gate motors, intercoms, and visitor management with full audit trails tied into CCTV.</p>
+            <div class="service-meta">
+              <span>Biometric/RFID</span>
+              <span>Gate automation</span>
+              <span>Audit logs</span>
+            </div>
+          </article>
+
+          <article class="service-panel" style="--panel-bg: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1200&q=80');">
+            <div class="pill">Perimeter</div>
+            <h3>Electric Fencing</h3>
+            <p>High-voltage perimeter protection with zoning, sirens, signage, and battery backup—commissioned to compliance.</p>
+            <div class="service-meta">
+              <span>Multi-zone</span>
+              <span>Alarm/CCTV tie-in</span>
+              <span>Backup power</span>
+            </div>
+          </article>
+
+          <article class="service-panel" style="--panel-bg: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');">
+            <div class="pill">Smart</div>
+            <h3>Smart Home & BMS</h3>
+            <p>Lighting, locks, energy dashboards, and automations layered on top of your security and power stack.</p>
+            <div class="service-meta">
+              <span>App + on-prem control</span>
+              <span>Scenes & automations</span>
+              <span>Energy dashboards</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Products / Hardware with Pricing -->
+      <section class="section products" id="products">
+        <div class="section__header">
+          <p class="eyebrow">Products & Pricing</p>
+          <h2>Hardware we supply, install, and support.</h2>
+          <p class="lede">Price ranges are indicative for standard configurations. We finalize numbers after a site audit and load assessment.</p>
+        </div>
+        <div class="product-line">
+          <div class="product-track">
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('cctv.avif');"></div>
+              <div class="product-body">
+                <div class="product-tag">CCTV</div>
+                <h3>4-Channel IP CCTV Kit</h3>
+                <div class="product-price">From ₦450,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('cctv.avif');"></div>
+              <div class="product-body">
+                <div class="product-tag">CCTV</div>
+                <h3>8-Channel IP CCTV Kit</h3>
+                <div class="product-price">From ₦620,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('solar.webp');"></div>
+              <div class="product-body">
+                <div class="product-tag">Power</div>
+                <h3>5kVA Hybrid + 2x Lithium</h3>
+                <div class="product-price">From ₦1,200,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('solar.webp');"></div>
+              <div class="product-body">
+                <div class="product-tag">Power</div>
+                <h3>10kVA Hybrid + 4x Lithium</h3>
+                <div class="product-price">From ₦2,400,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=80');"></div>
+              <div class="product-body">
+                <div class="product-tag">Starlink</div>
+                <h3>Starlink Business Kit</h3>
+                <div class="product-price">From ₦780,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('live.jpg');"></div>
+              <div class="product-body">
+                <div class="product-tag">Access</div>
+                <h3>Biometric Door Access Pack</h3>
+                <div class="product-price">From ₦350,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('live.jpg');"></div>
+              <div class="product-body">
+                <div class="product-tag">Access</div>
+                <h3>Gate Motor + Intercom</h3>
+                <div class="product-price">From ₦300,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1200&q=80');"></div>
+              <div class="product-body">
+                <div class="product-tag">Perimeter</div>
+                <h3>Electric Fence Kit</h3>
+                <div class="product-price">From ₦280,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('cctv.avif');"></div>
+              <div class="product-body">
+                <div class="product-tag">Backup</div>
+                <h3>Solar CCTV Backup Box</h3>
+                <div class="product-price">From ₦520,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');"></div>
+              <div class="product-body">
+                <div class="product-tag">Power</div>
+                <h3>Rack UPS + Surge Bundle</h3>
+                <div class="product-price">From ₦180,000</div>
+              </div>
+            </article>
+
+            <!-- duplicate set for seamless loop -->
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('cctv.avif');"></div>
+              <div class="product-body">
+                <div class="product-tag">CCTV</div>
+                <h3>4-Channel IP CCTV Kit</h3>
+                <div class="product-price">From ₦450,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('cctv.avif');"></div>
+              <div class="product-body">
+                <div class="product-tag">CCTV</div>
+                <h3>8-Channel IP CCTV Kit</h3>
+                <div class="product-price">From ₦620,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('solar.webp');"></div>
+              <div class="product-body">
+                <div class="product-tag">Power</div>
+                <h3>5kVA Hybrid + 2x Lithium</h3>
+                <div class="product-price">From ₦1,200,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('solar.webp');"></div>
+              <div class="product-body">
+                <div class="product-tag">Power</div>
+                <h3>10kVA Hybrid + 4x Lithium</h3>
+                <div class="product-price">From ₦2,400,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=80');"></div>
+              <div class="product-body">
+                <div class="product-tag">Starlink</div>
+                <h3>Starlink Business Kit</h3>
+                <div class="product-price">From ₦780,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('live.jpg');"></div>
+              <div class="product-body">
+                <div class="product-tag">Access</div>
+                <h3>Biometric Door Access Pack</h3>
+                <div class="product-price">From ₦350,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('live.jpg');"></div>
+              <div class="product-body">
+                <div class="product-tag">Access</div>
+                <h3>Gate Motor + Intercom</h3>
+                <div class="product-price">From ₦300,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1200&q=80');"></div>
+              <div class="product-body">
+                <div class="product-tag">Perimeter</div>
+                <h3>Electric Fence Kit</h3>
+                <div class="product-price">From ₦280,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('cctv.avif');"></div>
+              <div class="product-body">
+                <div class="product-tag">Backup</div>
+                <h3>Solar CCTV Backup Box</h3>
+                <div class="product-price">From ₦520,000</div>
+              </div>
+            </article>
+
+            <article class="product-tile">
+              <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');"></div>
+              <div class="product-body">
+                <div class="product-tag">Power</div>
+                <h3>Rack UPS + Surge Bundle</h3>
+                <div class="product-price">From ₦180,000</div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
+      <!-- About Section -->
       <section class="section about" id="about">
+        <div class="section__header">
+          <p class="eyebrow">About ARTSCI</p>
+          <h2>Industry leaders in integrated security and power solutions since 2015</h2>
+        </div>
         <div class="grid two">
           <div class="card highlight">
-            <p class="eyebrow">Why ARTSCI</p>
-            <h2>Engineers, installers, and support under one roof.</h2>
-            <p class="lede">We design resilient systems with predictable uptime. Our teams handle assessment, installation, remote monitoring, and preventive maintenance.</p>
+            <h3>Why Choose ARTSCI?</h3>
+            <p class="lede">Engineers, installers, and support specialists under one roof. We design resilient systems with guaranteed uptime and professional maintenance support across all your installations.</p>
             <div class="mini-stats">
-              <div><span class="stat">99.8%</span><span class="meta">Managed uptime</span></div>
+              <div><span class="stat">500+</span><span class="meta">Projects completed</span></div>
+              <div><span class="stat">99.8%</span><span class="meta">Uptime guarantee</span></div>
+              <div><span class="stat">24/7</span><span class="meta">Remote support</span></div>
               <div><span class="stat">48 hrs</span><span class="meta">Average kickoff</span></div>
             </div>
           </div>
           <div class="card list-card">
-            <h3>Delivery process</h3>
+            <h3>Our Process</h3>
             <ol class="steps">
-              <li><strong>Assess:</strong> Walk-through, risk scoring, load audit.</li>
-              <li><strong>Engineer:</strong> Right-size cameras, power, and controls.</li>
-              <li><strong>Install:</strong> Certified techs, clean cabling, handover.</li>
-              <li><strong>Maintain:</strong> Remote monitoring and preventive visits.</li>
+              <li><strong>Assess:</strong> Professional site walkthrough and security audit.</li>
+              <li><strong>Engineer:</strong> Custom system design tailored to your needs.</li>
+              <li><strong>Install:</strong> Certified technicians with professional installation.</li>
+              <li><strong>Maintain:</strong> 24/7 monitoring and preventive maintenance.</li>
+              <li><strong>Support:</strong> Responsive technical support always available.</li>
             </ol>
           </div>
         </div>
       </section>
 
+      <!-- Partners Section -->
       <section class="section partners" id="partners">
         <div class="section__header">
-          <p class="eyebrow">Certified partners</p>
-          <h2>Powered by trusted hardware brands.</h2>
+          <p class="eyebrow">Trusted Partners</p>
+          <h2>Powered by industry-leading hardware manufacturers</h2>
+          <p class="lede">We partner with globally recognized brands to deliver the highest quality surveillance, access control, and power solutions.</p>
         </div>
         <div class="partner-row">
           <div class="partner-tile">
@@ -209,72 +490,36 @@
         </div>
       </section>
 
-      <section class="section gallery" id="gallery">
-        <div class="section__header">
-          <p class="eyebrow">Recent installs</p>
-          <h2>On-site visuals from CCTV, smart access, solar, and fencing projects.</h2>
-          <p class="lede">Banks, estates, schools, and industrial sites trust ARTSCI to deliver discreet, reliable security and power layouts.</p>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-card" style="background-image:url('cctv.avif');">
-            <figcaption>CCTV & control room</figcaption>
-          </figure>
-          <figure class="gallery-card" style="background-image:url('live.jpg');">
-            <figcaption>Live monitoring desks</figcaption>
-          </figure>
-          <figure class="gallery-card" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');">
-            <figcaption>Secure server & access backbone</figcaption>
-          </figure>
-          <figure class="gallery-card" style="background-image:url('solar.webp');">
-            <figcaption>Solar + inverter backup</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="section testimonials" id="testimonials">
-        <div class="section__header">
-          <p class="eyebrow">Testimonials</p>
-          <h2>Teams trust us to keep their sites secure and powered.</h2>
-        </div>
-        <div class="grid three">
-          <div class="card quote">
-            <p>“ARTSCI gave our bank branches unified CCTV coverage and solar backup. Zero downtime during peak season.”</p>
-            <span class="meta">Security Manager, Regional Bank</span>
-          </div>
-          <div class="card quote">
-            <p>“The electric fence and smart gate install was swift. Support is responsive and proactive.”</p>
-            <span class="meta">Facilities Lead, Oil Servicing Firm</span>
-          </div>
-          <div class="card quote">
-            <p>“Our school now runs on dependable power with CCTV integrated into one dashboard—parents love the peace of mind.”</p>
-            <span class="meta">Administrator, Private School</span>
-          </div>
-        </div>
-      </section>
-
+      <!-- CTA Section -->
       <section class="section cta" id="contact">
         <div class="cta__card">
-          <div>
-            <p class="eyebrow">Let’s secure & power your space</p>
-            <h2>Schedule a consultation with ARTSCI.</h2>
-            <p class="lede">Call, message, or follow us for updates. We respond fast with a tailored proposal.</p>
+          <div class="cta-content">
+            <p class="eyebrow">Get Started Today</p>
+            <h2>Schedule Your Professional Security & Power Consultation</h2>
+            <p class="lede">Our team of experts is ready to assess your specific needs and provide a customized solution. Contact us today for a free consultation.</p>
             <div class="contact-grid">
-              <div>
-                <span class="meta">Phone</span>
-                <a class="contact-link" href="tel:07015862018">0701 586 2018</a>
+              <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a class="contact-link" href="tel:07015862018">0701 586 2018</a>
+                </div>
               </div>
-              <div>
-                <span class="meta">Instagram</span>
-                <a class="contact-link" href="https://www.instagram.com/artsci.ng" target="_blank" rel="noreferrer">@artsci.ng</a>
+              <div class="contact-item">
+                <span class="contact-icon">📸</span>
+                <div>
+                  <span class="contact-label">Instagram</span>
+                  <a class="contact-link" href="https://www.instagram.com/artsci.ng" target="_blank" rel="noreferrer">@artsci.ng</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="cta-actions">
-            <a class="btn primary" href="tel:07015862018">Call now</a>
-            <a class="btn ghost" href="#services">View services</a>
+            <a class="btn primary" href="tel:07015862018">Call Now</a>
+            <a class="btn ghost" href="#services">Explore Services</a>
           </div>
         </div>
-        <p class="footer-note">© 2025 ARTSCI — Security, Power, Smart Home</p>
+        <p class="footer-note">© 2025 ARTSCI Security & Power Company. All rights reserved. | Serving Nigeria with Excellence</p>
       </section>
     </main>
   </div>
