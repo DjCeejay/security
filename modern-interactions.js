@@ -13,17 +13,32 @@ const heroSlides = document.querySelectorAll('.hero-slide-bg');
 let currentSlide = 0;
 
 if (heroSlides.length > 0) {
+  heroSlides.forEach((slide, index) => {
+    slide.classList.remove('active', 'prev', 'next');
+    if (index === 0) {
+      slide.classList.add('active');
+    } else {
+      slide.classList.add('next');
+    }
+  });
+
   setInterval(() => {
-    // Remove active state from current slide
-    heroSlides[currentSlide].style.animation = 'none';
-    heroSlides[currentSlide].style.opacity = '0';
+    const nextSlide = (currentSlide + 1) % heroSlides.length;
 
-    // Move to next slide
-    currentSlide = (currentSlide + 1) % heroSlides.length;
+    heroSlides[currentSlide].classList.remove('active');
+    heroSlides[currentSlide].classList.add('prev');
 
-    // Add active state to next slide
-    heroSlides[currentSlide].style.animation = 'heroSlideInOut 12s infinite forwards';
-    heroSlides[currentSlide].style.opacity = '1';
+    heroSlides[nextSlide].classList.remove('prev', 'next');
+    heroSlides[nextSlide].classList.add('active');
+
+    heroSlides.forEach((slide, index) => {
+      if (index !== nextSlide && index !== currentSlide) {
+        slide.classList.remove('active', 'prev');
+        slide.classList.add('next');
+      }
+    });
+
+    currentSlide = nextSlide;
   }, 4000); // Change slide every 4 seconds
 }
 
